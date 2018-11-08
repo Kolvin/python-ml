@@ -9,3 +9,4 @@ services:
         - ./src/:/python-ml/src/
         - ./data/:/python-ml/data/
         - ./logs/:/python-ml/logs/
+        - ./results/:/python-ml/results/

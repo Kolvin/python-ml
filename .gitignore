@@ -4,12 +4,15 @@
 data/*
 !data/.gitkeep
 
+results/images/*
+!results/images/.gitkeep
+
 logs/*
 !logs/.gitkeep
 
 src/.DS_Store
 src/*.npy
-src/*.00001
+src/dogs-vs-cats-0.001-6conv-basic-video.model.data-00000-of-00001
 src/*.index
 src/*.meta
 src/dogs-vs-cats-*

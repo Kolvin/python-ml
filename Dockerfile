@@ -15,6 +15,7 @@ WORKDIR /python-ml/src/
 COPY ./src /python-ml/src
 COPY ./data /python-ml/data
 COPY ./logs /python-ml/logs
+COPY ./results /python-ml/results
 
 # Clean up
 RUN apt-get clean && \

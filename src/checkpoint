@@ -1,2 +1,0 @@
-model_checkpoint_path: "/python-ml/src/dogs-vs-cats-0.001-6conv-basic-video.model"
-all_model_checkpoint_paths: "/python-ml/src/dogs-vs-cats-0.001-6conv-basic-video.model"

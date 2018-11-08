@@ -7,6 +7,7 @@ from tqdm import tqdm
 TRAIN_DIR = '/python-ml/data/train'
 TEST_DIR = '/python-ml/data/cats-dogs-shuffled'
 LOG_DIR = '/python-ml/logs/cats-vs-dogs'
+RESULT_IMAGE_PATH = '/python-ml/results/images/'
 
 IMG_SIZE = 50
 LR = 1e-3
@@ -45,8 +46,8 @@ def process_test_data():
 
 
 
-# train_data = create_train_data()
-train_data = np.load('train_data.npy')
+train_data = create_train_data()
+# train_data = np.load('train_data.npy')
 
 # Train Neural Network
 import tflearn
@@ -123,13 +124,15 @@ model.save(MODEL_NAME)
 
 # Visual view of learning process
 # tensorboard --logdir=LOG_DIR
-
+import matplotlib as mpl
+mpl.use('Agg')
 import matplotlib.pyplot as plt
 
+
 # if you need to create the data:
-# test_data = process_test_data()
+test_data = process_test_data()
 # if you already have some saved:
-test_data = np.load('test_data.npy')
+# test_data = np.load('test_data.npy')
 
 fig=plt.figure()
 
@@ -153,4 +156,6 @@ for num,data in enumerate(test_data[:12]):
     plt.title(str_label)
     y.axes.get_xaxis().set_visible(False)
     y.axes.get_yaxis().set_visible(False)
-plt.show()
+
+plt.savefig(RESULT_IMAGE_PATH + MODEL_NAME + '.png')
+print('Result image saved to' + RESULT_IMAGE_PATH + MODEL_NAME + '.png')
