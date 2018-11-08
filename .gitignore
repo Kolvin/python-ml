@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+
+data/*
+!data/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
+src/.DS_Store
+src/*.npy
+src/*.00001
+src/*.index
+src/*.meta

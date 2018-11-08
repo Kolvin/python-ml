@@ -1,0 +1,8 @@
+matplotlib==3.0.0
+opencv-python==3.1.0.4
+tqdm==4.28.1
+tflearn==0.3.2
+tensorboard==1.8.0
+six==1.11.0
+numpy==1.15.4
+Pillow==5.3.0

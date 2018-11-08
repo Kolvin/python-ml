@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  python-app:
+      build: .
+      restart: always
+      container_name: python-ml
+      volumes:
+        - ./src/:/python-ml/src/
+        - ./data/:/python-ml/data/
+        - ./logs/:/python-ml/logs/
