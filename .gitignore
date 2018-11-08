@@ -12,3 +12,4 @@ src/*.npy
 src/*.00001
 src/*.index
 src/*.meta
+src/dogs-vs-cats-*
