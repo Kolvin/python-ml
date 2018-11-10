@@ -4,6 +4,7 @@ Dockerised Python Sandbox for ML
 ### Prerequisites:
     docker engine
     docker compose
+    Images provided from Kaggle - https://www.kaggle.com/c/dogs-vs-cats
 
 ### Getting started
 

@@ -5,7 +5,7 @@ from random import shuffle
 from tqdm import tqdm
 
 TRAIN_DIR = '/python-ml/data/train'
-TEST_DIR = '/python-ml/data/cats-dogs-shuffled'
+TEST_DIR = '/python-ml/data/test1'
 LOG_DIR = '/python-ml/logs/cats-vs-dogs'
 RESULT_IMAGE_PATH = '/python-ml/results/images/'
 
@@ -136,7 +136,7 @@ test_data = process_test_data()
 
 fig=plt.figure()
 
-for num,data in enumerate(test_data[:12]):
+for num,data in enumerate(test_data[:13]):
     # cat: [1,0]
     # dog: [0,1]
 
@@ -146,7 +146,6 @@ for num,data in enumerate(test_data[:12]):
     y = fig.add_subplot(3,4,num+1)
     orig = img_data
     data = img_data.reshape(IMG_SIZE,IMG_SIZE,1)
-    #model_out = model.predict([data])[0]
     model_out = model.predict([data])[0]
 
     if np.argmax(model_out) == 1: str_label='Dog'

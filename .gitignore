@@ -16,3 +16,4 @@ src/dogs-vs-cats-0.001-6conv-basic-video.model.data-00000-of-00001
 src/*.index
 src/*.meta
 src/dogs-vs-cats-*
+src/checkpoint
